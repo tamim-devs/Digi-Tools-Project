@@ -6,6 +6,8 @@ import Count from './components/count/Count'
 import Digitaltools from './components/digitaltools/Digitaltools'
 import Steps from './components/Steps/Steps'
 import Transparent from './components/transparent/Transparent'
+import Workflow from './components/workflow/Workflow'
+import Footer from './components/footer/Footer'
 // import Card from './components/card/Card'
 
 const App = () => {
@@ -33,6 +35,8 @@ const App = () => {
     </Suspense>
     <Steps/>
     <Transparent/>
+    <Workflow/>
+    <Footer/>
     </>
   )
 }

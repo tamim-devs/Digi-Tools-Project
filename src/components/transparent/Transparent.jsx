@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa";
 
 const plans = [
   {
@@ -84,7 +85,7 @@ const Transparent = () => {
 
             <ul className="mt-6 mb-2 space-y-2 text-sm">
               {plan.features.map((item, i) => (
-                <li key={i}>✔ {item}</li>
+                <li key={i} className="flex gap-2"><FaCheck className="text-green-400"  /> {item}</li>
               ))}
             </ul>
 
