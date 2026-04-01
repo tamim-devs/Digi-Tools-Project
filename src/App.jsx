@@ -5,6 +5,7 @@ import Banner from './components/banner/Banner'
 import Count from './components/count/Count'
 import Digitaltools from './components/digitaltools/Digitaltools'
 import Steps from './components/Steps/Steps'
+import Transparent from './components/transparent/Transparent'
 // import Card from './components/card/Card'
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
     <Digitaltools ProductsPromise={ProductsPromise}/>
     </Suspense>
     <Steps/>
+    <Transparent/>
     </>
   )
 }
