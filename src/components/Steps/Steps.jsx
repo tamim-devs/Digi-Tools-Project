@@ -1,6 +1,6 @@
 import React from "react";
 import UserImg from "../../assets/user.png";
-import PackageImg from "../../assets/Package.png";
+import PackageImg from "../../assets/package.png";
 import RocketImg from "../../assets/rocket.png";
 const Steps = () => {
   return (
