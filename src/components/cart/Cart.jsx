@@ -1,17 +1,19 @@
 import React from 'react';
-
+import { toast } from 'react-toastify';
 const Cart = ({ cart , setCart }) => {
   const totalPrice = cart.reduce((sum, item) => sum + Number(item.price || 0), 0);
 
   const handleDelete = (item) => {
     const newCart = cart.filter((c) => c.id !== item.id);
     setCart(newCart);
+    toast.info(`${item.name} removed from cart!`);
   };
 
   const handleCheckout = (e) => {
     e.preventDefault();
     alert(`Total: $${totalPrice}. Thank you for your purchase!`);
     setCart([]);
+    toast.success('Checkout completed!');
   };
 
   return (

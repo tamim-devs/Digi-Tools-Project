@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-
+import { toast } from 'react-toastify';
 const Card = ({ product,   cart, setCart  }) => {
 
   const [added, setAdded] = useState(false);
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     setAdded(true); 
      setCart([...cart, product])
-      e.preventDefault();
+      toast.success(`${product.name} added to cart!`);
   };
 
   return (

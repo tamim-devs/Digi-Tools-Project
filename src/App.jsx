@@ -7,6 +7,8 @@ import Steps from './components/Steps/Steps'
 import Transparent from './components/transparent/Transparent'
 import Workflow from './components/workflow/Workflow'
 import Footer from './components/footer/Footer'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const [view, setView] = useState("products"); 
@@ -49,6 +51,7 @@ const App = () => {
       <Transparent/>
       <Workflow/>
       <Footer/>
+       <ToastContainer position="top-right" autoClose={2000} />
     </>
   )
 }
