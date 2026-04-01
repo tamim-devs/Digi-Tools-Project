@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
-const Card = ({ product, handleAddToCart }) => {
+const Card = ({ product,   cart, setCart  }) => {
 
   const [added, setAdded] = useState(false);
 
-  const handleClick = () => {
-    handleAddToCart(product); 
+  const handleClick = (e) => {
     setAdded(true); 
+     setCart([...cart, product])
+      e.preventDefault();
   };
 
   return (
